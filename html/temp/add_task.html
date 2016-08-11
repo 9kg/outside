@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>上海厚步网络科技有限公司</title>
+        <link rel="shortcut icon" type="image/ico" href="../../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../css/main.css" media="all">
+        <script type="text/javascript">document.getElementsByClassName === undefined && (location.href = "../../html/common/not_support.html");</script>
+        <style type="text/css">
+            .content{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .add_task_form{
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>添加任务 <small></small></h1>
+            <div class="add_task_form">
+                <style type="text/css">
+                    form.add_task{
+                        max-width: 600px;
+                        margin: 10px auto;
+                    }
+                </style>
+                <form class="add_task">
+                    <div class="grid">
+                        <div class="ct grid">
+                            <div class="ct_4 field">商店链接</div>
+                            <div class="ct_4-3">
+                                <input type="text" name="storeurl" data-validate="require" data-validate-dir="bottom">
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">Appid</div>
+                            <div class="ct_4-3">
+                                <input type="text" name="appid" data-validate="require" data-validate-dir="bottom">
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">名称</div>
+                            <div class="ct_4-3">
+                                <input type="text" name="name" data-validate="require" data-validate-dir="bottom">
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">价格</div>
+                            <div class="ct_4-3 grid">
+                                <div class="ct">
+                                    <label class="suffix">
+                                        <input type="text" name="price" data-validate="require,+"><span class="opt_imitate">元</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">份数</div>
+                            <div class="ct_4-3">
+                                <label class="suffix">
+                                    <input type="text" name="countall" data-validate="require,!-,int"><span class="opt_imitate">份</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">关键词</div>
+                            <div class="ct_4-3 grid">
+                                <div class="ct">
+                                    <input type="text" name="keyword" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">关键词排名</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct">
+                                    <input type="text" name="keywordTop" data-validate="require,+,int">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">来源</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct_2 grid">
+                            <div class="ct_4 field">渠道</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct">
+                                    <input type="text" name="affiliate_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid_nowrap">
+                            <div class="ct_2 field">高级设置</div>
+                            <div class="ct_2 t_right">
+                                <label class="whether">
+                                    <input type="checkbox" checked data-show=".set_pro"><span class="opt_imitate">开</span><span class="opt_imitate">关</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid set_pro">
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_idfa</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_idfa_md5</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_idfa_true</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_idfa_false</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_2 field">start_idfa_localsql</div>
+                            <div class="ct_2 t_right">
+                                <label class="whether">
+                                    <input type="checkbox" name="isIdfa"><span class="opt_imitate">开</span><span class="opt_imitate">关</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_click</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_click_md5</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_click_post</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">start_click_true</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_2 field">start_click_callback</div>
+                            <div class="ct_2 t_right">
+                                <label class="whether">
+                                    <input type="checkbox" name="isIdfa"><span class="opt_imitate">开</span><span class="opt_imitate">关</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">end_click</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">end_click_md5</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">end_click_post</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ct grid">
+                            <div class="ct_4 field">end_click_true</div>
+                            <div class="ct_4-3 grid_nowrap">
+                                <div class="ct source_id_ct">
+                                    <input type="text" name="source_id" data-validate="require">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="oper_btns_ct t_right">
+                <button type="button" class="btn btn_task_reset">重置</button>
+                <button type="button" class="btn btn_primary btn_task_submit">提交</button>
+            </div>
+        </div>
+        <script src="../../js/base.js"></script>
+        <script src="http://192.168.1.211:6211/js/page/add_task.js"></script>
+    </body>
+</html>

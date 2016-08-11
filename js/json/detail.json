@@ -1,0 +1,22 @@
+{
+    "id": "562312",
+    "name": "提莫战队",
+    "spd": "李明举",
+    "type": "推广团队",
+    "phone": "18502110211",
+    "wechat": "67632167@qq.com",
+    "friend_num": "192",
+    "task_num": "313",
+    "income_today": "31",
+    "income_history": "6132",
+    "withdraw": "6100",
+    "login_num": "163",
+    "recent_login": "2016-03-11 12:22:21",
+    "money": {
+        "charge_by_date": "day",
+        "input_by_date": 1,
+        "input_by_one": 2,
+        "input_by_other": "超过30人每人4元"
+    },
+    "payed": "2000"
+}

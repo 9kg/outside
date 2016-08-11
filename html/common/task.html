@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>上海厚步网络科技有限公司</title>
+        <link rel="shortcut icon" type="image/ico" href="../../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../css/main.css" media="all">
+        <script type="text/javascript">document.getElementsByClassName === undefined && (location.href = "../../html/common/not_support.html");</script>
+        <style type="text/css">
+            .tool_ct{
+                margin-bottom: 15px;
+            }
+            .oper_ct .btn{
+                margin: 0 3px;
+            }
+            .oper_ct .import_task{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="top_bar">
+                <p class="logo"><i class="iconfont icon-95b"></i></p><i class="iconfont icon-7cd toggle_another_form"></i>
+            </div>
+            <ul class="menu">
+                <li class="active"><a href="../../html/common/task.html"><i class="iconfont icon-6cd"></i><span class="title">任务</span><span class="arrow"></span></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-6b5"></i><span class="title">个人中心</span><span class="arrow"></span></a>
+                    <ul class="sub_menu">
+                        <li><a href="../../html/common/personal.html" class="title">我的信息</a></li>
+                        <li><a href="javascript:;" class="title user_logout">退出登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="grid tool_ct">
+                <div class="ct_5-2 filter_ct">
+                    <div class="btn_radios btn_radios_4">
+                        <label class="btn_radio">
+                            <input type="radio" name="task_status" value="-2"><span class="btn_radio_desc">已结束</span>
+                        </label>
+                        <label class="btn_radio btn_radio_warning">
+                            <input type="radio" name="task_status" value="-1" checked=""><span class="btn_radio_desc">待处理</span>
+                        </label>
+                        <label class="btn_radio btn_radio_info"> 
+                            <input type="radio" name="task_status" value="1"><span class="btn_radio_desc">进行中</span>
+                        </label>
+                        <label class="btn_radio btn_radio_success">
+                            <input type="radio" name="task_status" value="2"><span class="btn_radio_desc">已完成</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="ct_5-3 oper_ct">
+                    <button type="button" class="btn btn_primary import_task">导入任务</button>
+                    <button type="button" class="btn btn_success btn_start">开始</button>
+                    <button type="button" class="btn btn_danger btn_pause hidden">暂停</button>
+                    <button type="button" class="btn btn_stop">结束</button>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/page/task.js"></script>
+    </body>
+</html>

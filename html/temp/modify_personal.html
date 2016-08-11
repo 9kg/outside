@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>上海厚步网络科技有限公司</title>
+        <link rel="shortcut icon" type="image/ico" href="../../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../css/main.css" media="all">
+        <script type="text/javascript">document.getElementsByClassName === undefined && (location.href = "../../html/common/not_support.html");</script>
+        <style type="text/css">
+            .content{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .modify_personal_form{
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>个人信息<small></small></h1>
+            <div class="modify_personal_form">
+                <style type="text/css">
+                    form.modify_personal{
+                        max-width: 600px;
+                        margin: 10px auto;
+                    }
+                </style>
+                <form class="modify_personal">
+                    <div class="grid">
+                        <div class="ct grid_nowrap">
+                            <div class="ct_4 field">姓名</div>
+                            <div class="ct_4-3">
+                                <input type="text" name="name" data-validate="require" data-validate-dir="bottom">
+                            </div>
+                        </div>
+                        <div class="ct grid_nowrap">
+                            <div class="ct_4 field">修改密码</div>
+                            <div class="ct_4-3 t_right">
+                                <label class="whether">
+                                    <input type="checkbox" data-show=".set_password"><span class="opt_imitate">是</span><span class="opt_imitate">否</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ct grid_nowrap set_password hidden">
+                            <div class="ct_4 field">密码</div>
+                            <div class="ct_4-3">
+                                <input type="password" name="password" data-validate="require" disabled>
+                            </div>
+                        </div>
+                        <div class="ct grid_nowrap set_password hidden">
+                            <div class="ct_4 field">新密码</div>
+                            <div class="ct_4-3">
+                                <input type="password" name="newpassword" data-validate="require" disabled>
+                            </div>
+                        </div>
+                        <div class="ct grid_nowrap set_password hidden">
+                            <div class="ct_4 field">确认新密码</div>
+                            <div class="ct_4-3">
+                                <input type="password" name="repassword" data-validate="require" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="oper_btns_ct t_right">
+                <button type="button" class="btn btn_personal_reset">重置</button>
+                <button type="button" class="btn btn_primary btn_personal_submit">提交</button>
+            </div>
+        </div>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>

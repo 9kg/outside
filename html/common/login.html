@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>上海厚步网络科技有限公司</title>
+        <link rel="shortcut icon" type="image/ico" href="../../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../css/main.css" media="all">
+        <script type="text/javascript">document.getElementsByClassName === undefined && (location.href = "../../html/common/not_support.html");</script>
+        <link rel="stylesheet" type="text/css" href="../../css/login.css" media="all">
+    </head>
+    <body>
+        <form class="login_box grid">
+            <div class="ct wharf"></div>
+            <div class="ct_6 field"><i class="iconfont icon-850 icon_username"></i></div>
+            <div class="ct_6-5">
+                <input type="text" name="username">
+            </div>
+            <div class="ct_6 field"><i class="iconfont icon-811 icon_password"></i></div>
+            <div class="ct_6-5">
+                <input type="text" name="password">
+            </div>
+            <div class="ct btn_conatiner">
+                <button type="button" class="btn btn_primary btn_login">登录</button>
+            </div>
+        </form>
+        <script src="../../js/base.js"></script>
+        <script type="text/javascript">
+            $('.btn_login').click(function(){
+                $.ajax({
+                    url: 'http://es2.laizhuan.com/module/offer1/User/login',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: $('form').serialize()
+                }).done(function(data){
+                    var theme = "danger";
+                    //- debugger
+                    if(data.status === 1){
+                        var date = new Date();  
+                        date.setTime(date.getTime()+(7*24*60*60*1000));
+                        localStorage.setItem("token",data.token);
+                        localStorage.setItem("role",data.prole);
+                        theme = "success";
+                        setTimeout(function(){
+                            window.location.href = 'welcome.html';
+                        },500);
+                    }
+                    $('.login_box').operTip(data.msg, {theme: theme, css:{"white-space": "nowrap"}, dir: "top"});
+                }).fail(function(err){
+                    $('.login_box').operTip('访问错误', {theme: "danger", css:{"white-space": "nowrap"}, dir: "top"});
+                });
+            });
+            $('body').on('keyup',function(e){
+                if(e.which === 13){
+                    $('.btn_login').trigger('click');
+                }
+            });
+        </script>
+    </body>
+</html>
